@@ -62,12 +62,12 @@ public class TeleOp extends LinearOpMode {
             if(gamepad1.left_bumper){
                 robot.pushLeft.setPosition(1);
             } else if(gamepad1.left_trigger>0){
-                robot.pushLeft.setPosition(0);
+                robot.pushLeft.setPosition(.5);
             }
             if(gamepad1.right_bumper){
-                robot.pushRight.setPosition(1);
-            } else if(gamepad1.right_trigger>0){
                 robot.pushRight.setPosition(0);
+            } else if(gamepad1.right_trigger>0){
+                robot.pushRight.setPosition(.5);
             }
             //activate right pusher by pushing right bumper
 
