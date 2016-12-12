@@ -50,12 +50,12 @@ public class TeleOp extends LinearOpMode {
             }
             //for rotating
             else if(gamepad1.right_stick_x==0 && gamepad1.right_stick_y==0) {
-                left = -gamepad1.left_stick_x;
-                robot.motorBack.setPower(left / 4);
-                robot.motorRight.setPower(-left / 4);
+                left = gamepad1.left_stick_x;
+                robot.motorBack.setPower(left / 2);
+                robot.motorRight.setPower(-left / 2);
 
-                robot.motorFront.setPower(-left / 4);
-                robot.motorLeft.setPower(left / 4);
+                robot.motorFront.setPower(-left / 2);
+                robot.motorLeft.setPower(left / 2);
             }
 
             //activate left pusher by pushing left bumper
